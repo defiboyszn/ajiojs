@@ -1,0 +1,29 @@
+{
+  "name": "ajio",
+  "version": "0.0.1",
+  "description": "An https promise based Library",
+  "main": "dist/ajio.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobithedev/ajiojs.git"
+  },
+  "keywords": [
+    "ajiojs",
+    "https",
+    "fetcher",
+    "dativeJs",
+    "axiosjs",
+    "axios"
+  ],
+  "author": {
+    "name": "Tobithedev",
+    "email": "ucheemekatobi@gmail.com"
+  },
+  "license": "MIT",
+  "jsdelivr": "dist/ajio.js",
+  "unpkg": "dist/ajio.js",
+  "bugs": {
+    "url": "https://github.com/tobithedev/ajiojs/issues"
+  },
+  "homepage": "https://tobithedev.github.io/ajiojs"
+}
