@@ -17,6 +17,8 @@ $ npm install ajio
 
 
 # Usage
+## Ajiojs do not support es modules for now 
+we still working on it
 
 ### Get
 ```javascript
@@ -34,11 +36,11 @@ ajio.get('https://jsonplaceholder.typicode.com/comments')
 var ajio = require('ajio');
 
 ajio.post('https://jsonplaceholder.typicode.com/comments',{
-  body: {
+  body: JSON.stringfy(`{
     name: "Ajio",
     author: "Tobithedev",
     version: "v0.1"
-  }
+  }`)
 })
   .then(data=>{
     console.log(data)
