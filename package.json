@@ -1,6 +1,6 @@
 {
   "name": "ajio",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An https promise based Library",
   "main": "dist/ajio.js",
   "repository": {
@@ -13,7 +13,10 @@
     "fetcher",
     "dativeJs",
     "axiosjs",
-    "axios"
+    "axios",
+    "fetch",
+    "ajio",
+    "request"
   ],
   "author": {
     "name": "Tobithedev",
