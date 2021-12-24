@@ -94,7 +94,7 @@ ajio.get("/comments").then((data) => {
 var ajio = require("ajio");
 
 ajio
-  .put("https://jsonplaceholder.typicode.com/comments", {
+  .patch("https://jsonplaceholder.typicode.com/comments", {
     body: JSON.stringfy(`
   {
     "postId": 20,
