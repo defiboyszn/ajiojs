@@ -1,4 +1,4 @@
-# Ajiojs is a promise-based HTTP client for node.js
+# Ajiojs is a promise-based HTTP client for browser
 
 
 # Installation
