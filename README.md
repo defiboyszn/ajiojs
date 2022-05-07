@@ -1,4 +1,4 @@
-# Ajiojs is a promise-based HTTP client for node.js
+# Ajiojs is a promise-based HTTP client for browser
 
 # Installation
 
@@ -15,6 +15,8 @@ $ npm install ajio
 ```
 
 # Usage
+## Ajiojs do not support es modules for now 
+we still working on it
 
 ### Get
 
@@ -38,6 +40,18 @@ ajio
       author: "Tobithedev",
       version: "v0.1",
     },
+
+var ajio = require('ajio');
+
+ajio.post('https://jsonplaceholder.typicode.com/comments',{
+  body: JSON.stringfy(`{
+    name: "Ajio",
+    author: "Tobithedev",
+    version: "v0.1"
+  }`)
+})
+  .then(data=>{
+    console.log(data)
   })
   .then((data) => {
     console.log(data);
