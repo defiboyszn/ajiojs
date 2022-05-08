@@ -1,6 +1,6 @@
 {
   "name": "ajio",
-  "version": "0.0.2",
+  "version": "0.1.2-beta",
   "description": "An https promise based Library",
   "main": "dist/ajio.js",
   "repository": {
@@ -19,8 +19,8 @@
     "request"
   ],
   "author": {
-    "name": "Tobithedev",
-    "email": "ucheemekatobi@gmail.com"
+    "name": "Tobithealpha",
+    "email": "tobithealpha@gmail.com"
   },
   "license": "MIT",
   "jsdelivr": "dist/ajio.js",
