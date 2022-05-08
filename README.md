@@ -15,8 +15,16 @@ $ npm install ajio
 ```
 
 # Usage
-## Ajiojs do not support es modules for now 
-we still working on it
+## Es modules
+
+```javascript
+import ajio from "ajio";
+
+ajio.get("https://jsonplaceholder.typicode.com/comments").then((data) => {
+  console.log(data);
+});
+```
+
 
 ### Get
 
@@ -37,8 +45,8 @@ ajio
   .post("https://jsonplaceholder.typicode.com/comments", {
     body: {
       name: "Ajio",
-      author: "Tobithedev",
-      version: "v0.1",
+      author: "Tobithealpha",
+      version: "v0.1.2-beta",
     },
 
 var ajio = require('ajio');
@@ -46,8 +54,8 @@ var ajio = require('ajio');
 ajio.post('https://jsonplaceholder.typicode.com/comments',{
   body: JSON.stringfy(`{
     name: "Ajio",
-    author: "Tobithedev",
-    version: "v0.1"
+    author: "Tobithealpha",
+    version: "v0.1.2-beta"
   }`)
 })
   .then(data=>{
@@ -69,8 +77,8 @@ ajio
   {
     "postId": 20,
     "id": 501,
-    "name": "Tobithedev",
-    "email": "ucheemekatobi@gmail.com",
+    "name": "Tobithealpha",
+    "email": "tobithealpha@gmail.com",
     "body": "Ajiojs has been released 😊😊"
   },`),
   })
@@ -95,12 +103,20 @@ ajio.delete(`https://jsonplaceholder.typicode.com/comments`).then((data) => {
 ```javascript
 var ajio = require("ajio");
 
-ajio.baseUrl(`https://jsonplaceholder.typicode.com`);
+ajio.baseUrl("https://jsonplaceholder.typicode.com");
 
-// then you can use `/` to the path you want use
+// then you can use "/" to the path you want use
 ajio.get("/comments").then((data) => {
   console.log(data);
 });
+
+// or
+// using promise method
+const getComments = async () => {
+  const req = await ajio.get("/comments");
+  const res = await req
+  return res
+}
 ```
 ### Patch
 
@@ -113,8 +129,8 @@ ajio
   {
     "postId": 20,
     "id": 501,
-    "name": "Tobithedev",
-    "email": "ucheemekatobi@gmail.com",
+    "name": "Tobithealpha",
+    "email": "tobithealpha@gmail.com",
     "body": "Ajiojs has been released 😊😊"
   },`),
   })
@@ -122,3 +138,6 @@ ajio
     console.log(data);
   });
 ```
+
+
+We Working On Making Ajio Work on Node :)
