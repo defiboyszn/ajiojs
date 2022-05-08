@@ -96,16 +96,6 @@
     //
 
     /**
-     * Feature test
-     * @return {Boolean} If true, required methods and APIs are supported
-     */
-    var supports = function () {
-      return (
-        "XMLHttpRequest" in window && "JSON" in window && "Promise" in window
-      )
-    }
-
-    /**
      * Merge two or more objects together.
      * @param   {Object}   objects  The objects to merge together
      * @returns {Object}            Merged values of defaults and options
@@ -198,12 +188,8 @@
     var makeRequest = function (url) {
       // concat the baseUrl to the url
       // if the baseUrl is not provided it will remain an empty string ''
-      // i noticed u are using pure javascript syntax, not much of es6
       // so  `${baseUrl}${url}` will not be used...
       var _mainUrl = baseUrl + url
-      if (!supports())
-        throw "ajioDative: This browser does not support the methods used in this plugin."
-
       // Create the XHR request
       var request = new XMLHttpRequest()
 
@@ -363,7 +349,7 @@
       delete: _delete,
       patch,
       baseUrl: _baseUrl,
-      version: "v0.2",
+      version: "v0.1.2-beta",
     }
 
     return init
