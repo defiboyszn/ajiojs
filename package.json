@@ -22,6 +22,10 @@
     "name": "Tobithealpha",
     "email": "tobithealpha@gmail.com"
   },
+  "contributors": [{
+    "name": "John Daniels",
+    "email": "adeyemijohndaniels@gmail.com"
+  }],
   "license": "MIT",
   "jsdelivr": "dist/ajio.js",
   "unpkg": "dist/ajio.js",
