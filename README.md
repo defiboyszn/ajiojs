@@ -125,14 +125,14 @@ var ajio = require("ajio");
 
 ajio
   .patch("https://jsonplaceholder.typicode.com/comments", {
-    body: JSON.stringfy(`
+    body: JSON.stringfy(
   {
     "postId": 20,
     "id": 501,
     "name": "Tobithealpha",
     "email": "tobithealpha@gmail.com",
     "body": "Ajiojs has been released 😊😊"
-  },`),
+  }),
   })
   .then((data) => {
     console.log(data);
